@@ -1,0 +1,42 @@
+
+==> Gerar o artefato do SERVIDOR
+Eclipse: 
+ - botão direito no nome do projeto;
+ - selecionar Run As;
+ - selecionar Maven build...
+ - na aba "Main", digitar em "Goals": clean package -Pjar-libs-server
+ - na aba "JRE" digitar "--enable-native-access=ALL-UNNAMED" (sem aspas) na
+   janela "VM arguments"
+
+Ao término do processo de construção, na raíz do projeto será criado o diretório
+"server", dentro dele estará a aplicação servidor "mcp_server02_server.jar" e
+o diretório "libs" com as bibliotecas necessárias à execução do servidor. 
+
+==> Gerar o artefato do CLIENTE
+Eclipse: 
+ - botão direito no nome do projeto;
+ - selecionar Run As;
+ - selecionar Maven build...
+ - na aba "Main", digitar em "Goals": clean package -Pjar-libs-client
+ - na aba "JRE" digitar "--enable-native-access=ALL-UNNAMED" (sem aspas) na
+   janela "VM arguments"
+
+Ao término do processo de construção, no diretório "target" será criado o
+diretório "dist-client", dentro dele estará a aplicação cliente
+"mcp_server02_client.jar" e o diretório "libs" com as bibliotecas necessárias à
+execução do cliente. 
+
+==> No terminal (Prompt de Comando), localizar o caminho do cliente
+(dica: clicar com o botão direito no nome do projeto e selecionar "Properties")
+...../target/dist-client
+
+==> Executar o cliente
+java -jar mcp_server02_client.jar
+
+================================================================================
+
+===> OBSERVAÇÃO IMPORTANTE <===
+-------------------------------
+Sempre que o artefato SERVIDOR é gerado, o artefato CLIENTE é apagado do
+diretório "target" e deve ser gerado novamente (mesmo que não tenha havido
+mudança de código nele).

@@ -1,0 +1,20 @@
+
+==> Building a JDBC-based MCP Server: A Developer Guide
+https://www.cdata.com/kb/articles/jdbc-mcp-server-dev-guide.rst
+
+==> cdata-jdbc-mcp-server
+https://github.com/CDataSoftware/cdata-jdbc-mcp-server
+
+==> Javadoc 0.8.1
+file:///C:/Users/romualdo/.m2/repository/io/modelcontextprotocol/sdk/mcp/0.8.1/mcp-0.8.1-javadoc/io.modelcontextprotocol.sdk.mcp/module-summary.html
+
+==> claude_desktop_config.json
+C:\Users\romualdo\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude
+
+==> lets-learn-mcp-java
+https://github.com/microsoft/lets-learn-mcp-java/tree/main
+
+==> tutorials/java-mcp/
+https://github.com/eugenp/tutorials/tree/master/java-mcp
+
+==> 

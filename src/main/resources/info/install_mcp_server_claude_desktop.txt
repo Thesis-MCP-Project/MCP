@@ -1,0 +1,51 @@
+
+==> EXEMPLO PARA INSTALAR UM SERVIDOR MCP LOCAL NO CLAUDE DESKTOP
+{
+  "mcpServers": {
+    "NOME_DO_SERVIDOR": {
+      "command": "java",
+      "args": ["-jar", "/caminho/absoluto/para/servidor.jar"],
+      "env": {}
+    }
+  }
+}
+
+==> EXEMPLO PARA INSTALAR UM SERVIDOR MCP REMOTO NO CLAUDE DESKTOP
+"my-java-server": {
+  "url": "http://SERVIDOR_OU_IP:PORTA/mcp"
+}
+
+==> McpServerSecac
+{
+  "mcpServers": {
+    "Servidor MCP - Exemplo 01": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\desenvolvimento\\mcp\servers\\exemplo01\\mcp_server01_server.jar"
+      ],
+      "env": {}
+    }
+  }
+}
+
+OU
+
+{
+  "mcpServers": {
+    "Servidor MCP - Exemplo 01": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:\\desenvolvimento\\mcp\\servers\\exemplo01\\mcp_server01_server.jar"
+      ],
+      "env": {}
+    }
+  },
+  "preferences": {
+    "coworkWebSearchEnabled": true,
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": false
+    "sidebarMode": "chat"
+  }
+}
