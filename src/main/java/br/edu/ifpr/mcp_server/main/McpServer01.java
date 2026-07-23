@@ -2,6 +2,7 @@ package br.edu.ifpr.mcp_server.main;
 
 import java.util.List;
 
+import br.edu.ifpr.mcp_server.mcp.tools.ExcelReaderTool;
 import br.edu.ifpr.mcp_server.mcp.tools.JsonDocTool;
 import br.edu.ifpr.mcp_server.mcp.utils.McpToolDefinition;
 import io.modelcontextprotocol.json.jackson3.JacksonMcpJsonMapper;
@@ -21,7 +22,10 @@ public class McpServer01 {
          SyncSpecification<SingleSessionSyncSpecification> mcp)
          throws Exception {
       // lista de ferramentas disponíveis no servidor
-      List<McpToolDefinition> tools = List.of(new JsonDocTool());
+      List<McpToolDefinition> tools = List.of(
+    		  new JsonDocTool(),
+    		  new ExcelReaderTool()
+    		  );
       // para cada ferramenta, executa seu registro para posterior execução
       for (McpToolDefinition tool : tools)
          if (tool != null)

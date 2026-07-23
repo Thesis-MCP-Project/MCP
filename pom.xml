@@ -59,6 +59,13 @@
    </dependencyManagement>
 
    <dependencies>
+   
+   <dependency>
+   		 <groupId>org.apache.poi</groupId>
+   		 <artifactId>poi-ooxml</artifactId>
+   		 <version>5.2.5</version>
+	</dependency>
+   
       <dependency>
          <groupId>io.modelcontextprotocol.sdk</groupId>
          <artifactId>mcp</artifactId>
